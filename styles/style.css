@@ -7,15 +7,8 @@ table{
     margin-top: 2em;
 }
 
-th,tr,td{
-   text-align: center!important; 
-}
 
 tr{
     border: black 0.1em solid !important;
-}
-
-th,td{
-   cursor: pointer; 
 }
 

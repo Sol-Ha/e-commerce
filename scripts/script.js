@@ -11,17 +11,20 @@ let product5 = new Product("almonds", "nuts", 4, "no discount", "none");
 let product6 = new Product("walnuts", "nuts", 5, "no discount", "none");
 
 let titles = ["Name", "Category", "Price", "Promotion", "Discount"];
+
 let myTable = document.querySelector("table");
 
-let promoItem = document.querySelector("article");
-
-
 // parsing array "titles" to the function(aka method) create rows
-createRows(titles);
-indexProduct(product1);
-indexProduct(product2);
-indexProduct(product3);
-indexProduct(product4);
-indexProduct(product5);
-indexProduct(product6);
+createHeaderTable(titles);
+
+// out for creating in order
+let bodyTable = document.createElement("tbody");
+myTable.appendChild(bodyTable); 
+
+createBodyTable(product1);
+createBodyTable(product2);
+createBodyTable(product3);
+createBodyTable(product4);
+createBodyTable(product5);
+createBodyTable(product6);
 

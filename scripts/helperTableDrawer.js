@@ -1,37 +1,30 @@
-// making table
+function createHeaderTable(nameOfMyTable) {
 
-function createRows(namingCategories) {
     
-    // variable to create new lines
-    let tHeader = document.createElement("thead");
-    myTable.appendChild(tHeader);
+    let headerTable = document.createElement("thead");
+    myTable.appendChild(headerTable); 
 
-    // creating my table
-    let trHeader = document.createElement("tr");
-    tHeader.appendChild(trHeader);
+    let rowHeaderTable = document.createElement("tr");
+    headerTable.appendChild(rowHeaderTable); 
 
-    for (let i = 0; i < namingCategories.length; i++) {
-        let tdHeader = document.createElement("td");
-        tHeader.appendChild(tdHeader);
-        // don't forget to tell the value of "index" into your array
-        tdHeader.appendChild(document.createTextNode(namingCategories[i]));    
+    for (let i = 0; i < nameOfMyTable.length; i++) {
+        let cellHeaderTable = document.createElement("td");
+        rowHeaderTable.appendChild(cellHeaderTable); 
+        cellHeaderTable.appendChild(document.createTextNode(nameOfMyTable[i]));
     }
 }
 
-function indexProduct(product){
+function createBodyTable(product){
 
     let list = product.toList();
-        // variable to create new lines
-        let tBody = document.createElement("tbody");
-        myTable.appendChild(tBody);
-    
-        let trBody = document.createElement("tr");
-        tBody.appendChild(trBody);
-    
-        for (let i = 0; i < 5; i++) {
-            let tdBody = document.createElement("td");
-            tBody.appendChild(tdBody);
-            // don't forget to tell the value of "index" into your array
-            tdBody.appendChild(document.createTextNode(list[i]));    
-        }
+
+    let rowBodyTable = document.createElement("tr");
+    bodyTable.appendChild(rowBodyTable); 
+
+    for (let i = 0; i < 5; i++) {
+        let cellBodyTable = document.createElement("td");
+        rowBodyTable.appendChild(cellBodyTable); 
+        cellBodyTable.appendChild(document.createTextNode(list[i]));
     }
+    
+};
