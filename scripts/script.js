@@ -1,14 +1,14 @@
 // "import" for picking other js products
 
 // variable from my "js class1"
-let product1 = new Product("apples", "fruit", 4, "discount", "10%");
-let product2 = new Product("bananas", "fruit", 4, "no discount", "none");
-let product3 = new Product("pineapple", "fruit", 5, "no discount", "none");
+let product1 = new Product("fruits","apples", 4, "discount", "10%");
+let product2 = new Product("fruits", "bananas", 4, "no discount", "none");
+let product3 = new Product("fruits", "pineapple", 5, "no discount", "none");
 
 // variable from my "js class1"
-let product4 = new Product("cashews", "nuts", 4, "discount", "10%");
-let product5 = new Product("almonds", "nuts", 4, "no discount", "none");
-let product6 = new Product("walnuts", "nuts", 5, "no discount", "none");
+let product4 = new Product("nuts", "cashews", 4, "discount", "10%");
+let product5 = new Product("nuts", "almonds", 4, "no discount", "none");
+let product6 = new Product("nuts", "walnuts", 5, "no discount", "none");
 
 let titles = ["Name", "Category", "Price", "Promotion", "Discount"];
 
