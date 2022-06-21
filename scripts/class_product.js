@@ -13,4 +13,7 @@ class Product extends Category{
     let result = [this.name, this.category, this.price +` €`, this.promotion, this.discount];
     return result;
   }
+
+
 }
+
