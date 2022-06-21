@@ -10,7 +10,7 @@ class Product extends Category{
   // calling the method directly inside the list
 
   toList(){
-    let result = [this.name, this.category, this.price +` €`, this.promotion, this.discount];
+    let result = [this.category, this.name, this.price +` €`, this.promotion, this.discount];
     return result;
   }
 

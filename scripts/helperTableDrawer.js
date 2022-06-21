@@ -11,6 +11,7 @@ function createHeaderTable(nameOfMyTable) {
         let cellHeaderTable = document.createElement("td");
         rowHeaderTable.appendChild(cellHeaderTable); 
         cellHeaderTable.appendChild(document.createTextNode(nameOfMyTable[i]));
+        cellHeaderTable.style.font = " bold 1.2em arial,serif";
     }
 }
 
