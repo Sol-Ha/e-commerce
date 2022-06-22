@@ -6,9 +6,36 @@
 table{
     margin-top: 2em;
     text-align: center;
+}
+
+tbody, thead, article, div{
     border: black 0.1em solid !important;
 }
 
+article, div{
+    padding: 1em;
+}
 
+article{
+    background-color: cadetblue;
+}
+
+div{
+    width: 25%;
+    background-color: white;
+}
+
+li{
+    list-style: none;
+}
+form{
+    padding-bottom: 1em;
+    gap: 1em;
+}
+
+select{
+    font-weight: 500!important;
+    text-align: center;
+}
 
 

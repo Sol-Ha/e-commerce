@@ -1,19 +1,25 @@
 // "import" for picking other js products
 
+// VARIABLES CONNECTED TO JS CLASS
 // variable from my "js class1"
-let product1 = new Product("fruits","apples", 4, "discount", "10%");
-let product2 = new Product("fruits", "bananas", 4, "no discount", "none");
-let product3 = new Product("fruits", "pineapple", 5, "no discount", "none");
+let product1 = new Product("Apples", "Fruits", 4, "Promotion", "10% discount");
+let product2 = new Product("Bananas", "Fruits", 4, "No promotion", "No discount");
+let product3 = new Product("Pineapple", "Fruits", 5, "No promotion", "No discount");
 
 // variable from my "js class1"
-let product4 = new Product("nuts", "cashews", 4, "discount", "10%");
-let product5 = new Product("nuts", "almonds", 4, "no discount", "none");
-let product6 = new Product("nuts", "walnuts", 5, "no discount", "none");
+let product4 = new Product("Cashews", "Nuts", 4, "Promotion", "10% discount");
+let product5 = new Product("Almonds", "Nuts", 4, "No promotion", "No discount");
+let product6 = new Product("Walnuts", "Nuts", 5, "No promotion", "No discount");
 
 let titles = ["Name", "Category", "Price", "Promotion", "Discount"];
 
-let myTable = document.querySelector("table");
 
+// HTML ELEMENTS
+const myTable = document.querySelector("table");
+const myArticle = document.querySelector("article");
+
+
+// TABLE COMMANDS
 // parsing array "titles" to the function(aka method) create rows
 createHeaderTable(titles);
 
@@ -27,4 +33,19 @@ createBodyTable(product3);
 createBodyTable(product4);
 createBodyTable(product5);
 createBodyTable(product6);
+
+let createDiv = document.createElement("div");
+myArticle.appendChild(createDiv);
+
+let createList = document.createElement("ul");
+createDiv.appendChild(createList);
+
+showInPromotion(product1);
+showInPromotion(product2);
+showInPromotion(product3);
+showInPromotion(product4);
+showInPromotion(product5);
+showInPromotion(product6);
+
+
 
